@@ -1,0 +1,49 @@
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/12.3R4/junos">
+    <vpls-connection-information xmlns="http://xml.juniper.net/junos/12.3R4/junos-routing">
+        <instance xmlns="http://xml.juniper.net/junos/12.3R4/junos-routing" junos:style="normal">
+            <instance-name>VPLS-NGWW-RT1803_1000251</instance-name>
+            <reference-site>
+                <local-site-id>local-site (5)</local-site-id>
+                <connection heading="connection-site           Type  St     Time last up          # Up trans">
+                    <connection-id>2</connection-id>
+                    <connection-type>rmt</connection-type>
+                    <connection-status>Up</connection-status>
+                    <last-change>Mar 28 16:54:01 2014
+                    </last-change>
+                    <up-transitions>1</up-transitions>
+                    <remote-pe>10.101.0.41</remote-pe>
+                    <control-word>No</control-word>
+                    <inbound-label>262146</inbound-label>
+                    <outbound-label>800012</outbound-label>
+                    <local-interface>
+                        <interface-name>lsi.1049346</interface-name>
+                        <interface-status>Up</interface-status>
+                        <interface-encapsulation>VPLS</interface-encapsulation>
+                        <interface-description>Intf - vpls VPLS-NGWW-RT1803_1000251 local site 5 remote site 2</interface-description>
+                    </local-interface>
+                </connection>
+                <connection >
+                    <connection-id>3</connection-id>
+                    <connection-type>rmt</connection-type>
+                    <connection-status>Up</connection-status>
+                    <last-change>May 14 11:14:20 2014
+                    </last-change>
+                    <up-transitions>1</up-transitions>
+                    <remote-pe>10.101.0.31</remote-pe>
+                    <control-word>No</control-word>
+                    <inbound-label>262147</inbound-label>
+                    <outbound-label>800028</outbound-label>
+                    <local-interface>
+                        <interface-name>lsi.1049349</interface-name>
+                        <interface-status>Up</interface-status>
+                        <interface-encapsulation>VPLS</interface-encapsulation>
+                        <interface-description>Intf - vpls VPLS-NGWW-RT1803_1000251 local site 5 remote site 3</interface-description>
+                    </local-interface>
+                </connection>
+            </reference-site>
+        </instance>
+    </vpls-connection-information>
+    <cli>
+        <banner>{master}</banner>
+    </cli>
+</rpc-reply>

@@ -1,0 +1,1254 @@
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/12.3R4/junos">
+    <bgp-information xmlns="http://xml.juniper.net/junos/12.3R4/junos-routing">
+        <bgp-peer junos:style="detail">
+            <peer-address>10.0.7.253+51053</peer-address>
+            <peer-as>1790</peer-as>
+            <local-address>10.0.7.252+179</local-address>
+            <local-as>1803</local-as>
+            <peer-type>External</peer-type>
+            <peer-state>Established</peer-state>
+            <peer-flags>Sync RSync</peer-flags>
+            <last-state>EstabSync</last-state>
+            <last-event>RecvKeepAlive</last-event>
+            <last-error>Hold Timer Expired Error</last-error>
+            <bgp-option-information xmlns="http://xml.juniper.net/junos/12.3R4/junos-routing">
+                <export-policy>
+                    toManagement
+                </export-policy>
+                <import-policy>
+                    fromManagement
+                </import-policy>
+                <bgp-options>Preference LocalAddress LogUpDown PeerAS Refresh</bgp-options>
+                <bgp-options2></bgp-options2>
+                <bgp-options-extended></bgp-options-extended>
+                <local-address>10.0.7.252</local-address>
+                <holdtime>90</holdtime>
+                <preference>170</preference>
+            </bgp-option-information>
+            <flap-count>4</flap-count>
+            <last-flap-event>HoldTime</last-flap-event>
+            <bgp-error>
+                <name>Hold Timer Expired Error</name>
+                <send-count>4</send-count>
+                <receive-count>0</receive-count>
+            </bgp-error>
+            <peer-id>10.0.7.0</peer-id>
+            <local-id>10.106.0.22</local-id>
+            <active-holdtime>90</active-holdtime>
+            <keepalive-interval>30</keepalive-interval>
+            <group-index>2</group-index>
+            <peer-index>0</peer-index>
+            <bgp-bfd>
+                <bfd-configuration-state>disabled</bfd-configuration-state>
+                <bfd-operational-state>down</bfd-operational-state>
+            </bgp-bfd>
+            <local-interface-name>ae13.700</local-interface-name>
+            <local-interface-index>614</local-interface-index>
+            <peer-restart-nlri-configured>inet-unicast</peer-restart-nlri-configured>
+            <nlri-type-peer>inet-unicast</nlri-type-peer>
+            <nlri-type-session>inet-unicast</nlri-type-session>
+            <peer-refresh-capability>2</peer-refresh-capability>
+            <peer-stale-route-time-configured>300</peer-stale-route-time-configured>
+            <peer-no-restart/>
+            <peer-restart-nlri-negotiated>inet-unicast</peer-restart-nlri-negotiated>
+            <peer-end-of-rib-received>inet-unicast</peer-end-of-rib-received>
+            <peer-end-of-rib-sent>inet-unicast</peer-end-of-rib-sent>
+            <peer-end-of-rib-scheduled></peer-end-of-rib-scheduled>
+            <peer-4byte-as-capability-advertised>1790</peer-4byte-as-capability-advertised>
+            <peer-addpath-not-supported/>
+            <bgp-rib junos:style="detail">
+                <name>inet.0</name>
+                <rib-bit>10002</rib-bit>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <send-state>in sync</send-state>
+                <active-prefix-count>1</active-prefix-count>
+                <received-prefix-count>1</received-prefix-count>
+                <accepted-prefix-count>1</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+                <advertised-prefix-count>31</advertised-prefix-count>
+            </bgp-rib>
+            <last-received>21</last-received>
+            <last-sent>10</last-sent>
+            <last-checked>43</last-checked>
+            <input-messages>23006</input-messages>
+            <input-updates>2</input-updates>
+            <input-refreshes>0</input-refreshes>
+            <input-octets>437187</input-octets>
+            <output-messages>23096</output-messages>
+            <output-updates>91</output-updates>
+            <output-refreshes>0</output-refreshes>
+            <output-octets>441946</output-octets>
+            <bgp-output-queue>
+                <number>0</number>
+                <count>0</count>
+            </bgp-output-queue>
+        </bgp-peer>
+        <bgp-peer junos:style="detail">
+            <peer-address>10.101.0.13+56927</peer-address>
+            <peer-as>1803</peer-as>
+            <local-address>10.106.0.22+179</local-address>
+            <local-as>1803</local-as>
+            <peer-type>Internal</peer-type>
+            <route-reflector-client/>
+            <peer-state>Established</peer-state>
+            <peer-flags>Sync RSync</peer-flags>
+            <last-state>EstabSync</last-state>
+            <last-event>RecvKeepAlive</last-event>
+            <last-error>None</last-error>
+            <bgp-option-information xmlns="http://xml.juniper.net/junos/12.3R4/junos-routing">
+                <export-policy>
+                    nhs
+                </export-policy>
+                <bgp-options>Preference LocalAddress AuthKey LogUpDown Cluster AddressFamily Rib-group Refresh</bgp-options>
+                <bgp-options2></bgp-options2>
+                <bgp-options-extended></bgp-options-extended>
+                <authentication-configured/>
+                <address-families>inet-unicast l2vpn-signaling</address-families>
+                <local-address>10.106.0.22</local-address>
+                <holdtime>90</holdtime>
+                <preference>170</preference>
+            </bgp-option-information>
+            <flap-count>0</flap-count>
+            <peer-id>10.101.0.13</peer-id>
+            <local-id>10.106.0.22</local-id>
+            <active-holdtime>90</active-holdtime>
+            <keepalive-interval>30</keepalive-interval>
+            <group-index>0</group-index>
+            <peer-index>1</peer-index>
+            <bgp-bfd>
+                <bfd-configuration-state>disabled</bfd-configuration-state>
+                <bfd-operational-state>down</bfd-operational-state>
+            </bgp-bfd>
+            <peer-restart-nlri-configured>inet-unicast l2vpn</peer-restart-nlri-configured>
+            <nlri-type-peer>inet-unicast l2vpn</nlri-type-peer>
+            <nlri-type-session>inet-unicast l2vpn</nlri-type-session>
+            <peer-refresh-capability>2</peer-refresh-capability>
+            <peer-stale-route-time-configured>300</peer-stale-route-time-configured>
+            <peer-no-restart/>
+            <peer-restart-nlri-negotiated>inet-unicast l2vpn</peer-restart-nlri-negotiated>
+            <peer-end-of-rib-received>inet-unicast l2vpn</peer-end-of-rib-received>
+            <peer-end-of-rib-sent>inet-unicast l2vpn</peer-end-of-rib-sent>
+            <peer-end-of-rib-scheduled></peer-end-of-rib-scheduled>
+            <peer-4byte-as-capability-advertised>1803</peer-4byte-as-capability-advertised>
+            <peer-addpath-not-supported/>
+            <bgp-rib junos:style="detail">
+                <name>inet.0</name>
+                <rib-bit>10000</rib-bit>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <send-state>in sync</send-state>
+                <active-prefix-count>0</active-prefix-count>
+                <received-prefix-count>0</received-prefix-count>
+                <accepted-prefix-count>0</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+                <advertised-prefix-count>7</advertised-prefix-count>
+            </bgp-rib>
+            <bgp-rib junos:style="detail">
+                <name>bgp.l2vpn.0</name>
+                <rib-bit>20000</rib-bit>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <vpn-rib-state>VPN restart is complete</vpn-rib-state>
+                <send-state>in sync</send-state>
+                <active-prefix-count>3</active-prefix-count>
+                <received-prefix-count>4</received-prefix-count>
+                <accepted-prefix-count>4</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+                <advertised-prefix-count>18</advertised-prefix-count>
+            </bgp-rib>
+            <bgp-rib junos:style="detail">
+                <name>VPLS-NGWW-RT1803_1000251.l2vpn.0</name>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <vpn-rib-state>VPN restart is complete</vpn-rib-state>
+                <send-state>not advertising</send-state>
+                <active-prefix-count>0</active-prefix-count>
+                <received-prefix-count>0</received-prefix-count>
+                <accepted-prefix-count>0</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+            </bgp-rib>
+            <last-received>17</last-received>
+            <last-sent>8</last-sent>
+            <last-checked>33</last-checked>
+            <input-messages>196348</input-messages>
+            <input-updates>6</input-updates>
+            <input-refreshes>0</input-refreshes>
+            <input-octets>3730951</input-octets>
+            <output-messages>195160</output-messages>
+            <output-updates>1828</output-updates>
+            <output-refreshes>0</output-refreshes>
+            <output-octets>3863430</output-octets>
+            <bgp-output-queue>
+                <number>0</number>
+                <count>0</count>
+            </bgp-output-queue>
+            <bgp-output-queue>
+                <number>1</number>
+                <count>0</count>
+            </bgp-output-queue>
+            <bgp-output-queue>
+                <number>2</number>
+                <count>0</count>
+            </bgp-output-queue>
+        </bgp-peer>
+        <bgp-peer junos:style="detail">
+            <peer-address>10.101.0.16+52862</peer-address>
+            <peer-as>1803</peer-as>
+            <local-address>10.106.0.22+179</local-address>
+            <local-as>1803</local-as>
+            <peer-type>Internal</peer-type>
+            <route-reflector-client/>
+            <peer-state>Established</peer-state>
+            <peer-flags>Sync RSync</peer-flags>
+            <last-state>EstabSync</last-state>
+            <last-event>RecvKeepAlive</last-event>
+            <last-error>None</last-error>
+            <bgp-option-information xmlns="http://xml.juniper.net/junos/12.3R4/junos-routing">
+                <export-policy>
+                    nhs
+                </export-policy>
+                <bgp-options>Preference LocalAddress AuthKey LogUpDown Cluster AddressFamily Rib-group Refresh</bgp-options>
+                <bgp-options2></bgp-options2>
+                <bgp-options-extended></bgp-options-extended>
+                <authentication-configured/>
+                <address-families>inet-unicast l2vpn-signaling</address-families>
+                <local-address>10.106.0.22</local-address>
+                <holdtime>90</holdtime>
+                <preference>170</preference>
+            </bgp-option-information>
+            <flap-count>0</flap-count>
+            <peer-id>10.101.0.16</peer-id>
+            <local-id>10.106.0.22</local-id>
+            <active-holdtime>90</active-holdtime>
+            <keepalive-interval>30</keepalive-interval>
+            <group-index>0</group-index>
+            <peer-index>3</peer-index>
+            <bgp-bfd>
+                <bfd-configuration-state>disabled</bfd-configuration-state>
+                <bfd-operational-state>down</bfd-operational-state>
+            </bgp-bfd>
+            <peer-restart-nlri-configured>inet-unicast l2vpn</peer-restart-nlri-configured>
+            <nlri-type-peer>inet-unicast l2vpn</nlri-type-peer>
+            <nlri-type-session>inet-unicast l2vpn</nlri-type-session>
+            <peer-refresh-capability>2</peer-refresh-capability>
+            <peer-stale-route-time-configured>300</peer-stale-route-time-configured>
+            <peer-no-restart/>
+            <peer-restart-nlri-negotiated>inet-unicast l2vpn</peer-restart-nlri-negotiated>
+            <peer-end-of-rib-received>inet-unicast l2vpn</peer-end-of-rib-received>
+            <peer-end-of-rib-sent>inet-unicast l2vpn</peer-end-of-rib-sent>
+            <peer-end-of-rib-scheduled></peer-end-of-rib-scheduled>
+            <peer-4byte-as-capability-advertised>1803</peer-4byte-as-capability-advertised>
+            <peer-addpath-not-supported/>
+            <bgp-rib junos:style="detail">
+                <name>inet.0</name>
+                <rib-bit>10000</rib-bit>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <send-state>in sync</send-state>
+                <active-prefix-count>0</active-prefix-count>
+                <received-prefix-count>0</received-prefix-count>
+                <accepted-prefix-count>0</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+                <advertised-prefix-count>7</advertised-prefix-count>
+            </bgp-rib>
+            <bgp-rib junos:style="detail">
+                <name>bgp.l2vpn.0</name>
+                <rib-bit>20000</rib-bit>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <vpn-rib-state>VPN restart is complete</vpn-rib-state>
+                <send-state>in sync</send-state>
+                <active-prefix-count>0</active-prefix-count>
+                <received-prefix-count>0</received-prefix-count>
+                <accepted-prefix-count>0</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+                <advertised-prefix-count>22</advertised-prefix-count>
+            </bgp-rib>
+            <bgp-rib junos:style="detail">
+                <name>VPLS-NGWW-RT1803_1000251.l2vpn.0</name>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <vpn-rib-state>VPN restart is complete</vpn-rib-state>
+                <send-state>not advertising</send-state>
+                <active-prefix-count>0</active-prefix-count>
+                <received-prefix-count>0</received-prefix-count>
+                <accepted-prefix-count>0</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+            </bgp-rib>
+            <last-received>18</last-received>
+            <last-sent>5</last-sent>
+            <last-checked>5</last-checked>
+            <input-messages>196402</input-messages>
+            <input-updates>2</input-updates>
+            <input-refreshes>0</input-refreshes>
+            <input-octets>3731701</input-octets>
+            <output-messages>195272</output-messages>
+            <output-updates>1940</output-updates>
+            <output-refreshes>0</output-refreshes>
+            <output-octets>3875146</output-octets>
+            <bgp-output-queue>
+                <number>0</number>
+                <count>0</count>
+            </bgp-output-queue>
+            <bgp-output-queue>
+                <number>1</number>
+                <count>0</count>
+            </bgp-output-queue>
+            <bgp-output-queue>
+                <number>2</number>
+                <count>0</count>
+            </bgp-output-queue>
+        </bgp-peer>
+        <bgp-peer junos:style="detail">
+            <peer-address>10.101.0.22+57944</peer-address>
+            <peer-as>1803</peer-as>
+            <local-address>10.106.0.22+179</local-address>
+            <local-as>1803</local-as>
+            <peer-type>Internal</peer-type>
+            <route-reflector-client/>
+            <peer-state>Established</peer-state>
+            <peer-flags>Sync RSync</peer-flags>
+            <last-state>EstabSync</last-state>
+            <last-event>RecvKeepAlive</last-event>
+            <last-error>None</last-error>
+            <bgp-option-information xmlns="http://xml.juniper.net/junos/12.3R4/junos-routing">
+                <export-policy>
+                    nhs
+                </export-policy>
+                <bgp-options>Preference LocalAddress AuthKey LogUpDown Cluster AddressFamily Rib-group Refresh</bgp-options>
+                <bgp-options2></bgp-options2>
+                <bgp-options-extended></bgp-options-extended>
+                <authentication-configured/>
+                <address-families>inet-unicast l2vpn-signaling</address-families>
+                <local-address>10.106.0.22</local-address>
+                <holdtime>90</holdtime>
+                <preference>170</preference>
+            </bgp-option-information>
+            <flap-count>0</flap-count>
+            <peer-id>10.101.0.22</peer-id>
+            <local-id>10.106.0.22</local-id>
+            <active-holdtime>90</active-holdtime>
+            <keepalive-interval>30</keepalive-interval>
+            <group-index>0</group-index>
+            <peer-index>0</peer-index>
+            <bgp-bfd>
+                <bfd-configuration-state>disabled</bfd-configuration-state>
+                <bfd-operational-state>down</bfd-operational-state>
+            </bgp-bfd>
+            <peer-restart-nlri-configured>inet-unicast l2vpn</peer-restart-nlri-configured>
+            <nlri-type-peer>inet-unicast l2vpn</nlri-type-peer>
+            <nlri-type-session>inet-unicast l2vpn</nlri-type-session>
+            <peer-refresh-capability>2</peer-refresh-capability>
+            <peer-stale-route-time-configured>300</peer-stale-route-time-configured>
+            <peer-no-restart/>
+            <peer-restart-nlri-negotiated>inet-unicast l2vpn</peer-restart-nlri-negotiated>
+            <peer-end-of-rib-received>inet-unicast l2vpn</peer-end-of-rib-received>
+            <peer-end-of-rib-sent>inet-unicast l2vpn</peer-end-of-rib-sent>
+            <peer-end-of-rib-scheduled></peer-end-of-rib-scheduled>
+            <peer-4byte-as-capability-advertised>1803</peer-4byte-as-capability-advertised>
+            <peer-addpath-not-supported/>
+            <bgp-rib junos:style="detail">
+                <name>inet.0</name>
+                <rib-bit>10000</rib-bit>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <send-state>in sync</send-state>
+                <active-prefix-count>0</active-prefix-count>
+                <received-prefix-count>0</received-prefix-count>
+                <accepted-prefix-count>0</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+                <advertised-prefix-count>7</advertised-prefix-count>
+            </bgp-rib>
+            <bgp-rib junos:style="detail">
+                <name>bgp.l2vpn.0</name>
+                <rib-bit>20000</rib-bit>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <vpn-rib-state>VPN restart is complete</vpn-rib-state>
+                <send-state>in sync</send-state>
+                <active-prefix-count>4</active-prefix-count>
+                <received-prefix-count>4</received-prefix-count>
+                <accepted-prefix-count>4</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+                <advertised-prefix-count>18</advertised-prefix-count>
+            </bgp-rib>
+            <bgp-rib junos:style="detail">
+                <name>VPLS-NGWW-RT1803_1000251.l2vpn.0</name>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <vpn-rib-state>VPN restart is complete</vpn-rib-state>
+                <send-state>not advertising</send-state>
+                <active-prefix-count>0</active-prefix-count>
+                <received-prefix-count>0</received-prefix-count>
+                <accepted-prefix-count>0</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+            </bgp-rib>
+            <last-received>13</last-received>
+            <last-sent>10</last-sent>
+            <last-checked>61</last-checked>
+            <input-messages>196395</input-messages>
+            <input-updates>5</input-updates>
+            <input-refreshes>0</input-refreshes>
+            <input-octets>3731794</input-octets>
+            <output-messages>195000</output-messages>
+            <output-updates>1667</output-updates>
+            <output-refreshes>0</output-refreshes>
+            <output-octets>3845047</output-octets>
+            <bgp-output-queue>
+                <number>0</number>
+                <count>0</count>
+            </bgp-output-queue>
+            <bgp-output-queue>
+                <number>1</number>
+                <count>0</count>
+            </bgp-output-queue>
+            <bgp-output-queue>
+                <number>2</number>
+                <count>0</count>
+            </bgp-output-queue>
+        </bgp-peer>
+        <bgp-peer junos:style="detail">
+            <peer-address>10.101.0.31+54860</peer-address>
+            <peer-as>1803</peer-as>
+            <local-address>10.106.0.22+179</local-address>
+            <local-as>1803</local-as>
+            <peer-type>Internal</peer-type>
+            <peer-state>Established</peer-state>
+            <peer-flags>Sync RSync</peer-flags>
+            <last-state>EstabSync</last-state>
+            <last-event>RecvKeepAlive</last-event>
+            <last-error>None</last-error>
+            <bgp-option-information xmlns="http://xml.juniper.net/junos/12.3R4/junos-routing">
+                <export-policy>
+                    nhs
+                </export-policy>
+                <bgp-options>Preference LocalAddress AuthKey LogUpDown AddressFamily Rib-group Refresh</bgp-options>
+                <bgp-options2></bgp-options2>
+                <bgp-options-extended></bgp-options-extended>
+                <authentication-configured/>
+                <address-families>inet-unicast l2vpn-signaling</address-families>
+                <local-address>10.106.0.22</local-address>
+                <holdtime>90</holdtime>
+                <preference>170</preference>
+            </bgp-option-information>
+            <flap-count>0</flap-count>
+            <peer-id>10.101.0.31</peer-id>
+            <local-id>10.106.0.22</local-id>
+            <active-holdtime>90</active-holdtime>
+            <keepalive-interval>30</keepalive-interval>
+            <group-index>1</group-index>
+            <peer-index>0</peer-index>
+            <bgp-bfd>
+                <bfd-configuration-state>disabled</bfd-configuration-state>
+                <bfd-operational-state>down</bfd-operational-state>
+            </bgp-bfd>
+            <peer-restart-nlri-configured>inet-unicast l2vpn</peer-restart-nlri-configured>
+            <nlri-type-peer>inet-unicast l2vpn</nlri-type-peer>
+            <nlri-type-session>inet-unicast l2vpn</nlri-type-session>
+            <peer-refresh-capability>2</peer-refresh-capability>
+            <peer-stale-route-time-configured>300</peer-stale-route-time-configured>
+            <peer-no-restart/>
+            <peer-restart-nlri-negotiated>inet-unicast l2vpn</peer-restart-nlri-negotiated>
+            <peer-end-of-rib-received>inet-unicast l2vpn</peer-end-of-rib-received>
+            <peer-end-of-rib-sent>inet-unicast l2vpn</peer-end-of-rib-sent>
+            <peer-end-of-rib-scheduled></peer-end-of-rib-scheduled>
+            <peer-4byte-as-capability-advertised>1803</peer-4byte-as-capability-advertised>
+            <peer-addpath-not-supported/>
+            <bgp-rib junos:style="detail">
+                <name>inet.0</name>
+                <rib-bit>10001</rib-bit>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <send-state>in sync</send-state>
+                <active-prefix-count>6</active-prefix-count>
+                <received-prefix-count>7</received-prefix-count>
+                <accepted-prefix-count>7</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+                <advertised-prefix-count>1</advertised-prefix-count>
+            </bgp-rib>
+            <bgp-rib junos:style="detail">
+                <name>bgp.l2vpn.0</name>
+                <rib-bit>20001</rib-bit>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <vpn-rib-state>VPN restart is complete</vpn-rib-state>
+                <send-state>in sync</send-state>
+                <active-prefix-count>10</active-prefix-count>
+                <received-prefix-count>10</received-prefix-count>
+                <accepted-prefix-count>10</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+                <advertised-prefix-count>9</advertised-prefix-count>
+            </bgp-rib>
+            <bgp-rib junos:style="detail">
+                <name>VPLS-NGWW-RT1803_1000251.l2vpn.0</name>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <vpn-rib-state>VPN restart is complete</vpn-rib-state>
+                <send-state>not advertising</send-state>
+                <active-prefix-count>1</active-prefix-count>
+                <received-prefix-count>1</received-prefix-count>
+                <accepted-prefix-count>1</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+            </bgp-rib>
+            <last-received>21</last-received>
+            <last-sent>18</last-sent>
+            <last-checked>72</last-checked>
+            <input-messages>194413</input-messages>
+            <input-updates>1104</input-updates>
+            <input-refreshes>0</input-refreshes>
+            <input-octets>3762643</input-octets>
+            <output-messages>194339</output-messages>
+            <output-updates>1007</output-updates>
+            <output-refreshes>0</output-refreshes>
+            <output-octets>3754319</output-octets>
+            <bgp-output-queue>
+                <number>0</number>
+                <count>0</count>
+            </bgp-output-queue>
+            <bgp-output-queue>
+                <number>1</number>
+                <count>0</count>
+            </bgp-output-queue>
+            <bgp-output-queue>
+                <number>2</number>
+                <count>0</count>
+            </bgp-output-queue>
+        </bgp-peer>
+        <bgp-peer junos:style="detail">
+            <peer-address>10.101.0.34+49514</peer-address>
+            <peer-as>1803</peer-as>
+            <local-address>10.106.0.22+179</local-address>
+            <local-as>1803</local-as>
+            <peer-type>Internal</peer-type>
+            <peer-state>Established</peer-state>
+            <peer-flags>Sync RSync</peer-flags>
+            <last-state>EstabSync</last-state>
+            <last-event>RecvKeepAlive</last-event>
+            <last-error>None</last-error>
+            <bgp-option-information xmlns="http://xml.juniper.net/junos/12.3R4/junos-routing">
+                <export-policy>
+                    nhs
+                </export-policy>
+                <bgp-options>Preference LocalAddress AuthKey LogUpDown AddressFamily Rib-group Refresh</bgp-options>
+                <bgp-options2></bgp-options2>
+                <bgp-options-extended></bgp-options-extended>
+                <authentication-configured/>
+                <address-families>inet-unicast l2vpn-signaling</address-families>
+                <local-address>10.106.0.22</local-address>
+                <holdtime>90</holdtime>
+                <preference>170</preference>
+            </bgp-option-information>
+            <flap-count>0</flap-count>
+            <peer-id>10.101.0.34</peer-id>
+            <local-id>10.106.0.22</local-id>
+            <active-holdtime>90</active-holdtime>
+            <keepalive-interval>30</keepalive-interval>
+            <group-index>1</group-index>
+            <peer-index>2</peer-index>
+            <bgp-bfd>
+                <bfd-configuration-state>disabled</bfd-configuration-state>
+                <bfd-operational-state>down</bfd-operational-state>
+            </bgp-bfd>
+            <peer-restart-nlri-configured>inet-unicast l2vpn</peer-restart-nlri-configured>
+            <nlri-type-peer>inet-unicast l2vpn</nlri-type-peer>
+            <nlri-type-session>inet-unicast l2vpn</nlri-type-session>
+            <peer-refresh-capability>2</peer-refresh-capability>
+            <peer-stale-route-time-configured>300</peer-stale-route-time-configured>
+            <peer-no-restart/>
+            <peer-restart-nlri-negotiated>inet-unicast l2vpn</peer-restart-nlri-negotiated>
+            <peer-end-of-rib-received>inet-unicast l2vpn</peer-end-of-rib-received>
+            <peer-end-of-rib-sent>inet-unicast l2vpn</peer-end-of-rib-sent>
+            <peer-end-of-rib-scheduled></peer-end-of-rib-scheduled>
+            <peer-4byte-as-capability-advertised>1803</peer-4byte-as-capability-advertised>
+            <peer-addpath-not-supported/>
+            <bgp-rib junos:style="detail">
+                <name>inet.0</name>
+                <rib-bit>10001</rib-bit>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <send-state>in sync</send-state>
+                <active-prefix-count>0</active-prefix-count>
+                <received-prefix-count>0</received-prefix-count>
+                <accepted-prefix-count>0</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+                <advertised-prefix-count>1</advertised-prefix-count>
+            </bgp-rib>
+            <bgp-rib junos:style="detail">
+                <name>bgp.l2vpn.0</name>
+                <rib-bit>20001</rib-bit>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <vpn-rib-state>VPN restart is complete</vpn-rib-state>
+                <send-state>in sync</send-state>
+                <active-prefix-count>1</active-prefix-count>
+                <received-prefix-count>1</received-prefix-count>
+                <accepted-prefix-count>1</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+                <advertised-prefix-count>9</advertised-prefix-count>
+            </bgp-rib>
+            <bgp-rib junos:style="detail">
+                <name>VPLS-NGWW-RT1803_1000251.l2vpn.0</name>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <vpn-rib-state>VPN restart is complete</vpn-rib-state>
+                <send-state>not advertising</send-state>
+                <active-prefix-count>0</active-prefix-count>
+                <received-prefix-count>0</received-prefix-count>
+                <accepted-prefix-count>0</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+            </bgp-rib>
+            <last-received>2</last-received>
+            <last-sent>16</last-sent>
+            <last-checked>82</last-checked>
+            <input-messages>194609</input-messages>
+            <input-updates>1014</input-updates>
+            <input-refreshes>0</input-refreshes>
+            <input-octets>3760152</input-octets>
+            <output-messages>194325</output-messages>
+            <output-updates>994</output-updates>
+            <output-refreshes>0</output-refreshes>
+            <output-octets>3753055</output-octets>
+            <bgp-output-queue>
+                <number>0</number>
+                <count>0</count>
+            </bgp-output-queue>
+            <bgp-output-queue>
+                <number>1</number>
+                <count>0</count>
+            </bgp-output-queue>
+            <bgp-output-queue>
+                <number>2</number>
+                <count>0</count>
+            </bgp-output-queue>
+        </bgp-peer>
+        <bgp-peer junos:style="detail">
+            <peer-address>10.101.0.40+55275</peer-address>
+            <peer-as>1803</peer-as>
+            <local-address>10.106.0.22+179</local-address>
+            <local-as>1803</local-as>
+            <peer-type>Internal</peer-type>
+            <route-reflector-client/>
+            <peer-state>Established</peer-state>
+            <peer-flags>Sync RSync</peer-flags>
+            <last-state>EstabSync</last-state>
+            <last-event>RecvKeepAlive</last-event>
+            <last-error>None</last-error>
+            <bgp-option-information xmlns="http://xml.juniper.net/junos/12.3R4/junos-routing">
+                <export-policy>
+                    nhs
+                </export-policy>
+                <bgp-options>Preference LocalAddress AuthKey LogUpDown Cluster AddressFamily Rib-group Refresh</bgp-options>
+                <bgp-options2></bgp-options2>
+                <bgp-options-extended></bgp-options-extended>
+                <authentication-configured/>
+                <address-families>inet-unicast l2vpn-signaling</address-families>
+                <local-address>10.106.0.22</local-address>
+                <holdtime>90</holdtime>
+                <preference>170</preference>
+            </bgp-option-information>
+            <flap-count>0</flap-count>
+            <peer-id>10.101.0.40</peer-id>
+            <local-id>10.106.0.22</local-id>
+            <active-holdtime>90</active-holdtime>
+            <keepalive-interval>30</keepalive-interval>
+            <group-index>0</group-index>
+            <peer-index>7</peer-index>
+            <bgp-bfd>
+                <bfd-configuration-state>disabled</bfd-configuration-state>
+                <bfd-operational-state>down</bfd-operational-state>
+            </bgp-bfd>
+            <peer-restart-nlri-configured>inet-unicast l2vpn</peer-restart-nlri-configured>
+            <nlri-type-peer>inet-unicast l2vpn</nlri-type-peer>
+            <nlri-type-session>inet-unicast l2vpn</nlri-type-session>
+            <peer-refresh-capability>2</peer-refresh-capability>
+            <peer-stale-route-time-configured>300</peer-stale-route-time-configured>
+            <peer-no-restart/>
+            <peer-restart-nlri-negotiated>inet-unicast l2vpn</peer-restart-nlri-negotiated>
+            <peer-end-of-rib-received>inet-unicast l2vpn</peer-end-of-rib-received>
+            <peer-end-of-rib-sent>inet-unicast l2vpn</peer-end-of-rib-sent>
+            <peer-end-of-rib-scheduled></peer-end-of-rib-scheduled>
+            <peer-4byte-as-capability-advertised>1803</peer-4byte-as-capability-advertised>
+            <peer-addpath-not-supported/>
+            <bgp-rib junos:style="detail">
+                <name>inet.0</name>
+                <rib-bit>10000</rib-bit>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <send-state>in sync</send-state>
+                <active-prefix-count>0</active-prefix-count>
+                <received-prefix-count>0</received-prefix-count>
+                <accepted-prefix-count>0</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+                <advertised-prefix-count>7</advertised-prefix-count>
+            </bgp-rib>
+            <bgp-rib junos:style="detail">
+                <name>bgp.l2vpn.0</name>
+                <rib-bit>20000</rib-bit>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <vpn-rib-state>VPN restart is complete</vpn-rib-state>
+                <send-state>in sync</send-state>
+                <active-prefix-count>1</active-prefix-count>
+                <received-prefix-count>1</received-prefix-count>
+                <accepted-prefix-count>1</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+                <advertised-prefix-count>21</advertised-prefix-count>
+            </bgp-rib>
+            <bgp-rib junos:style="detail">
+                <name>VPLS-NGWW-RT1803_1000251.l2vpn.0</name>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <vpn-rib-state>VPN restart is complete</vpn-rib-state>
+                <send-state>not advertising</send-state>
+                <active-prefix-count>0</active-prefix-count>
+                <received-prefix-count>0</received-prefix-count>
+                <accepted-prefix-count>0</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+            </bgp-rib>
+            <last-received>16</last-received>
+            <last-sent>15</last-sent>
+            <last-checked>7</last-checked>
+            <input-messages>196922</input-messages>
+            <input-updates>3</input-updates>
+            <input-refreshes>0</input-refreshes>
+            <input-octets>3741650</input-octets>
+            <output-messages>195235</output-messages>
+            <output-updates>1904</output-updates>
+            <output-refreshes>0</output-refreshes>
+            <output-octets>3871288</output-octets>
+            <bgp-output-queue>
+                <number>0</number>
+                <count>0</count>
+            </bgp-output-queue>
+            <bgp-output-queue>
+                <number>1</number>
+                <count>0</count>
+            </bgp-output-queue>
+            <bgp-output-queue>
+                <number>2</number>
+                <count>0</count>
+            </bgp-output-queue>
+        </bgp-peer>
+        <bgp-peer junos:style="detail">
+            <peer-address>10.101.0.41+55379</peer-address>
+            <peer-as>1803</peer-as>
+            <local-address>10.106.0.22+179</local-address>
+            <local-as>1803</local-as>
+            <peer-type>Internal</peer-type>
+            <route-reflector-client/>
+            <peer-state>Established</peer-state>
+            <peer-flags>Sync RSync</peer-flags>
+            <last-state>EstabSync</last-state>
+            <last-event>RecvKeepAlive</last-event>
+            <last-error>None</last-error>
+            <bgp-option-information xmlns="http://xml.juniper.net/junos/12.3R4/junos-routing">
+                <export-policy>
+                    nhs
+                </export-policy>
+                <bgp-options>Preference LocalAddress AuthKey LogUpDown Cluster AddressFamily Rib-group Refresh</bgp-options>
+                <bgp-options2></bgp-options2>
+                <bgp-options-extended></bgp-options-extended>
+                <authentication-configured/>
+                <address-families>inet-unicast l2vpn-signaling</address-families>
+                <local-address>10.106.0.22</local-address>
+                <holdtime>90</holdtime>
+                <preference>170</preference>
+            </bgp-option-information>
+            <flap-count>1</flap-count>
+            <last-flap-event>RecvNotify</last-flap-event>
+            <bgp-error>
+                <name>Cease</name>
+                <send-count>0</send-count>
+                <receive-count>1</receive-count>
+            </bgp-error>
+            <peer-id>10.101.0.41</peer-id>
+            <local-id>10.106.0.22</local-id>
+            <active-holdtime>90</active-holdtime>
+            <keepalive-interval>30</keepalive-interval>
+            <group-index>0</group-index>
+            <peer-index>6</peer-index>
+            <bgp-bfd>
+                <bfd-configuration-state>disabled</bfd-configuration-state>
+                <bfd-operational-state>down</bfd-operational-state>
+            </bgp-bfd>
+            <peer-restart-nlri-configured>inet-unicast l2vpn</peer-restart-nlri-configured>
+            <nlri-type-peer>inet-unicast l2vpn</nlri-type-peer>
+            <nlri-type-session>inet-unicast l2vpn</nlri-type-session>
+            <peer-refresh-capability>2</peer-refresh-capability>
+            <peer-stale-route-time-configured>300</peer-stale-route-time-configured>
+            <peer-no-restart/>
+            <peer-restart-nlri-negotiated>inet-unicast l2vpn</peer-restart-nlri-negotiated>
+            <peer-end-of-rib-received>inet-unicast l2vpn</peer-end-of-rib-received>
+            <peer-end-of-rib-sent>inet-unicast l2vpn</peer-end-of-rib-sent>
+            <peer-end-of-rib-scheduled></peer-end-of-rib-scheduled>
+            <peer-4byte-as-capability-advertised>1803</peer-4byte-as-capability-advertised>
+            <peer-addpath-not-supported/>
+            <bgp-rib junos:style="detail">
+                <name>inet.0</name>
+                <rib-bit>10000</rib-bit>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <send-state>in sync</send-state>
+                <active-prefix-count>0</active-prefix-count>
+                <received-prefix-count>6</received-prefix-count>
+                <accepted-prefix-count>6</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+                <advertised-prefix-count>1</advertised-prefix-count>
+            </bgp-rib>
+            <bgp-rib junos:style="detail">
+                <name>bgp.l2vpn.0</name>
+                <rib-bit>20000</rib-bit>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <vpn-rib-state>VPN restart is complete</vpn-rib-state>
+                <send-state>in sync</send-state>
+                <active-prefix-count>0</active-prefix-count>
+                <received-prefix-count>3</received-prefix-count>
+                <accepted-prefix-count>3</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+                <advertised-prefix-count>19</advertised-prefix-count>
+            </bgp-rib>
+            <bgp-rib junos:style="detail">
+                <name>VPLS-NGWW-RT1803_1000251.l2vpn.0</name>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <vpn-rib-state>VPN restart is complete</vpn-rib-state>
+                <send-state>not advertising</send-state>
+                <active-prefix-count>0</active-prefix-count>
+                <received-prefix-count>1</received-prefix-count>
+                <accepted-prefix-count>1</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+            </bgp-rib>
+            <last-received>11</last-received>
+            <last-sent>8</last-sent>
+            <last-checked>5</last-checked>
+            <input-messages>171180</input-messages>
+            <input-updates>86</input-updates>
+            <input-refreshes>0</input-refreshes>
+            <input-octets>3257295</input-octets>
+            <output-messages>168866</output-messages>
+            <output-updates>434</output-updates>
+            <output-refreshes>0</output-refreshes>
+            <output-octets>3246243</output-octets>
+            <bgp-output-queue>
+                <number>0</number>
+                <count>0</count>
+            </bgp-output-queue>
+            <bgp-output-queue>
+                <number>1</number>
+                <count>0</count>
+            </bgp-output-queue>
+            <bgp-output-queue>
+                <number>2</number>
+                <count>0</count>
+            </bgp-output-queue>
+        </bgp-peer>
+        <bgp-peer junos:style="detail">
+            <peer-address>10.106.0.19+179</peer-address>
+            <peer-as>1803</peer-as>
+            <local-address>10.106.0.22+52796</local-address>
+            <local-as>1803</local-as>
+            <peer-type>Internal</peer-type>
+            <peer-state>Established</peer-state>
+            <peer-flags>Sync RSync</peer-flags>
+            <last-state>EstabSync</last-state>
+            <last-event>RecvKeepAlive</last-event>
+            <last-error>None</last-error>
+            <bgp-option-information xmlns="http://xml.juniper.net/junos/12.3R4/junos-routing">
+                <export-policy>
+                    nhs
+                </export-policy>
+                <bgp-options>Preference LocalAddress AuthKey LogUpDown AddressFamily Rib-group Refresh</bgp-options>
+                <bgp-options2></bgp-options2>
+                <bgp-options-extended></bgp-options-extended>
+                <authentication-configured/>
+                <address-families>inet-unicast l2vpn-signaling</address-families>
+                <local-address>10.106.0.22</local-address>
+                <holdtime>90</holdtime>
+                <preference>170</preference>
+            </bgp-option-information>
+            <flap-count>4</flap-count>
+            <last-flap-event>RecvNotify</last-flap-event>
+            <bgp-error>
+                <name>Cease</name>
+                <send-count>0</send-count>
+                <receive-count>4</receive-count>
+            </bgp-error>
+            <peer-id>10.106.0.19</peer-id>
+            <local-id>10.106.0.22</local-id>
+            <active-holdtime>90</active-holdtime>
+            <keepalive-interval>30</keepalive-interval>
+            <group-index>1</group-index>
+            <peer-index>1</peer-index>
+            <bgp-bfd>
+                <bfd-configuration-state>disabled</bfd-configuration-state>
+                <bfd-operational-state>down</bfd-operational-state>
+            </bgp-bfd>
+            <peer-restart-nlri-configured>inet-unicast l2vpn</peer-restart-nlri-configured>
+            <nlri-type-peer>inet-unicast l2vpn</nlri-type-peer>
+            <nlri-type-session>inet-unicast l2vpn</nlri-type-session>
+            <peer-refresh-capability>2</peer-refresh-capability>
+            <peer-stale-route-time-configured>300</peer-stale-route-time-configured>
+            <peer-no-restart/>
+            <peer-restart-nlri-negotiated>inet-unicast l2vpn</peer-restart-nlri-negotiated>
+            <peer-end-of-rib-received>inet-unicast l2vpn</peer-end-of-rib-received>
+            <peer-end-of-rib-sent>inet-unicast l2vpn</peer-end-of-rib-sent>
+            <peer-end-of-rib-scheduled></peer-end-of-rib-scheduled>
+            <peer-4byte-as-capability-advertised>1803</peer-4byte-as-capability-advertised>
+            <peer-addpath-not-supported/>
+            <bgp-rib junos:style="detail">
+                <name>inet.0</name>
+                <rib-bit>10001</rib-bit>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <send-state>in sync</send-state>
+                <active-prefix-count>0</active-prefix-count>
+                <received-prefix-count>0</received-prefix-count>
+                <accepted-prefix-count>0</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+                <advertised-prefix-count>1</advertised-prefix-count>
+            </bgp-rib>
+            <bgp-rib junos:style="detail">
+                <name>bgp.l2vpn.0</name>
+                <rib-bit>20001</rib-bit>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <vpn-rib-state>VPN restart is complete</vpn-rib-state>
+                <send-state>in sync</send-state>
+                <active-prefix-count>2</active-prefix-count>
+                <received-prefix-count>2</received-prefix-count>
+                <accepted-prefix-count>2</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+                <advertised-prefix-count>9</advertised-prefix-count>
+            </bgp-rib>
+            <bgp-rib junos:style="detail">
+                <name>VPLS-NGWW-RT1803_1000251.l2vpn.0</name>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <vpn-rib-state>VPN restart is complete</vpn-rib-state>
+                <send-state>not advertising</send-state>
+                <active-prefix-count>1</active-prefix-count>
+                <received-prefix-count>1</received-prefix-count>
+                <accepted-prefix-count>1</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+            </bgp-rib>
+            <last-received>10</last-received>
+            <last-sent>3</last-sent>
+            <last-checked>7</last-checked>
+            <input-messages>194444</input-messages>
+            <input-updates>837</input-updates>
+            <input-refreshes>4</input-refreshes>
+            <input-octets>3742707</input-octets>
+            <output-messages>194162</output-messages>
+            <output-updates>828</output-updates>
+            <output-refreshes>0</output-refreshes>
+            <output-octets>3737096</output-octets>
+            <bgp-output-queue>
+                <number>0</number>
+                <count>0</count>
+            </bgp-output-queue>
+            <bgp-output-queue>
+                <number>1</number>
+                <count>0</count>
+            </bgp-output-queue>
+            <bgp-output-queue>
+                <number>2</number>
+                <count>0</count>
+            </bgp-output-queue>
+        </bgp-peer>
+        <bgp-peer junos:style="detail">
+            <peer-address>10.106.0.28+51774</peer-address>
+            <peer-as>1803</peer-as>
+            <local-address>10.106.0.22+179</local-address>
+            <local-as>1803</local-as>
+            <peer-type>Internal</peer-type>
+            <route-reflector-client/>
+            <peer-state>Established</peer-state>
+            <peer-flags>Sync RSync</peer-flags>
+            <last-state>EstabSync</last-state>
+            <last-event>RecvKeepAlive</last-event>
+            <last-error>None</last-error>
+            <bgp-option-information xmlns="http://xml.juniper.net/junos/12.3R4/junos-routing">
+                <export-policy>
+                    nhs
+                </export-policy>
+                <bgp-options>Preference LocalAddress AuthKey LogUpDown Cluster AddressFamily Rib-group Refresh</bgp-options>
+                <bgp-options2></bgp-options2>
+                <bgp-options-extended></bgp-options-extended>
+                <authentication-configured/>
+                <address-families>inet-unicast l2vpn-signaling</address-families>
+                <local-address>10.106.0.22</local-address>
+                <holdtime>90</holdtime>
+                <preference>170</preference>
+            </bgp-option-information>
+            <flap-count>0</flap-count>
+            <peer-id>10.106.0.28</peer-id>
+            <local-id>10.106.0.22</local-id>
+            <active-holdtime>90</active-holdtime>
+            <keepalive-interval>30</keepalive-interval>
+            <group-index>0</group-index>
+            <peer-index>4</peer-index>
+            <bgp-bfd>
+                <bfd-configuration-state>disabled</bfd-configuration-state>
+                <bfd-operational-state>down</bfd-operational-state>
+            </bgp-bfd>
+            <peer-restart-nlri-configured>inet-unicast l2vpn</peer-restart-nlri-configured>
+            <nlri-type-peer>inet-unicast l2vpn</nlri-type-peer>
+            <nlri-type-session>inet-unicast l2vpn</nlri-type-session>
+            <peer-refresh-capability>2</peer-refresh-capability>
+            <peer-stale-route-time-configured>300</peer-stale-route-time-configured>
+            <peer-no-restart/>
+            <peer-restart-nlri-negotiated>inet-unicast l2vpn</peer-restart-nlri-negotiated>
+            <peer-end-of-rib-received>inet-unicast l2vpn</peer-end-of-rib-received>
+            <peer-end-of-rib-sent>inet-unicast l2vpn</peer-end-of-rib-sent>
+            <peer-end-of-rib-scheduled></peer-end-of-rib-scheduled>
+            <peer-4byte-as-capability-advertised>1803</peer-4byte-as-capability-advertised>
+            <peer-addpath-not-supported/>
+            <bgp-rib junos:style="detail">
+                <name>inet.0</name>
+                <rib-bit>10000</rib-bit>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <send-state>in sync</send-state>
+                <active-prefix-count>0</active-prefix-count>
+                <received-prefix-count>0</received-prefix-count>
+                <accepted-prefix-count>0</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+                <advertised-prefix-count>7</advertised-prefix-count>
+            </bgp-rib>
+            <bgp-rib junos:style="detail">
+                <name>bgp.l2vpn.0</name>
+                <rib-bit>20000</rib-bit>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <vpn-rib-state>VPN restart is complete</vpn-rib-state>
+                <send-state>in sync</send-state>
+                <active-prefix-count>0</active-prefix-count>
+                <received-prefix-count>0</received-prefix-count>
+                <accepted-prefix-count>0</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+                <advertised-prefix-count>22</advertised-prefix-count>
+            </bgp-rib>
+            <bgp-rib junos:style="detail">
+                <name>VPLS-NGWW-RT1803_1000251.l2vpn.0</name>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <vpn-rib-state>VPN restart is complete</vpn-rib-state>
+                <send-state>not advertising</send-state>
+                <active-prefix-count>0</active-prefix-count>
+                <received-prefix-count>0</received-prefix-count>
+                <accepted-prefix-count>0</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+            </bgp-rib>
+            <last-received>29</last-received>
+            <last-sent>18</last-sent>
+            <last-checked>49</last-checked>
+            <input-messages>196964</input-messages>
+            <input-updates>2</input-updates>
+            <input-refreshes>0</input-refreshes>
+            <input-octets>3742379</input-octets>
+            <output-messages>195271</output-messages>
+            <output-updates>1940</output-updates>
+            <output-refreshes>0</output-refreshes>
+            <output-octets>3875127</output-octets>
+            <bgp-output-queue>
+                <number>0</number>
+                <count>0</count>
+            </bgp-output-queue>
+            <bgp-output-queue>
+                <number>1</number>
+                <count>0</count>
+            </bgp-output-queue>
+            <bgp-output-queue>
+                <number>2</number>
+                <count>0</count>
+            </bgp-output-queue>
+        </bgp-peer>
+        <bgp-peer junos:style="detail">
+            <peer-address>10.106.0.29+59725</peer-address>
+            <peer-as>1803</peer-as>
+            <local-address>10.106.0.22+179</local-address>
+            <local-as>1803</local-as>
+            <peer-type>Internal</peer-type>
+            <route-reflector-client/>
+            <peer-state>Established</peer-state>
+            <peer-flags>Sync RSync</peer-flags>
+            <last-state>EstabSync</last-state>
+            <last-event>RecvKeepAlive</last-event>
+            <last-error>None</last-error>
+            <bgp-option-information xmlns="http://xml.juniper.net/junos/12.3R4/junos-routing">
+                <export-policy>
+                    nhs
+                </export-policy>
+                <bgp-options>Preference LocalAddress AuthKey LogUpDown Cluster AddressFamily Rib-group Refresh</bgp-options>
+                <bgp-options2></bgp-options2>
+                <bgp-options-extended></bgp-options-extended>
+                <authentication-configured/>
+                <address-families>inet-unicast l2vpn-signaling</address-families>
+                <local-address>10.106.0.22</local-address>
+                <holdtime>90</holdtime>
+                <preference>170</preference>
+            </bgp-option-information>
+            <flap-count>0</flap-count>
+            <peer-id>10.106.0.29</peer-id>
+            <local-id>10.106.0.22</local-id>
+            <active-holdtime>90</active-holdtime>
+            <keepalive-interval>30</keepalive-interval>
+            <group-index>0</group-index>
+            <peer-index>2</peer-index>
+            <bgp-bfd>
+                <bfd-configuration-state>disabled</bfd-configuration-state>
+                <bfd-operational-state>down</bfd-operational-state>
+            </bgp-bfd>
+            <peer-restart-nlri-configured>inet-unicast l2vpn</peer-restart-nlri-configured>
+            <nlri-type-peer>inet-unicast l2vpn</nlri-type-peer>
+            <nlri-type-session>inet-unicast l2vpn</nlri-type-session>
+            <peer-refresh-capability>2</peer-refresh-capability>
+            <peer-stale-route-time-configured>300</peer-stale-route-time-configured>
+            <peer-no-restart/>
+            <peer-restart-nlri-negotiated>inet-unicast l2vpn</peer-restart-nlri-negotiated>
+            <peer-end-of-rib-received>inet-unicast l2vpn</peer-end-of-rib-received>
+            <peer-end-of-rib-sent>inet-unicast l2vpn</peer-end-of-rib-sent>
+            <peer-end-of-rib-scheduled></peer-end-of-rib-scheduled>
+            <peer-4byte-as-capability-advertised>1803</peer-4byte-as-capability-advertised>
+            <peer-addpath-not-supported/>
+            <bgp-rib junos:style="detail">
+                <name>inet.0</name>
+                <rib-bit>10000</rib-bit>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <send-state>in sync</send-state>
+                <active-prefix-count>0</active-prefix-count>
+                <received-prefix-count>0</received-prefix-count>
+                <accepted-prefix-count>0</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+                <advertised-prefix-count>7</advertised-prefix-count>
+            </bgp-rib>
+            <bgp-rib junos:style="detail">
+                <name>bgp.l2vpn.0</name>
+                <rib-bit>20000</rib-bit>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <vpn-rib-state>VPN restart is complete</vpn-rib-state>
+                <send-state>in sync</send-state>
+                <active-prefix-count>0</active-prefix-count>
+                <received-prefix-count>0</received-prefix-count>
+                <accepted-prefix-count>0</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+                <advertised-prefix-count>22</advertised-prefix-count>
+            </bgp-rib>
+            <bgp-rib junos:style="detail">
+                <name>VPLS-NGWW-RT1803_1000251.l2vpn.0</name>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <vpn-rib-state>VPN restart is complete</vpn-rib-state>
+                <send-state>not advertising</send-state>
+                <active-prefix-count>0</active-prefix-count>
+                <received-prefix-count>0</received-prefix-count>
+                <accepted-prefix-count>0</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+            </bgp-rib>
+            <last-received>13</last-received>
+            <last-sent>8</last-sent>
+            <last-checked>3</last-checked>
+            <input-messages>196921</input-messages>
+            <input-updates>2</input-updates>
+            <input-refreshes>0</input-refreshes>
+            <input-octets>3741562</input-octets>
+            <output-messages>195272</output-messages>
+            <output-updates>1940</output-updates>
+            <output-refreshes>0</output-refreshes>
+            <output-octets>3875146</output-octets>
+            <bgp-output-queue>
+                <number>0</number>
+                <count>0</count>
+            </bgp-output-queue>
+            <bgp-output-queue>
+                <number>1</number>
+                <count>0</count>
+            </bgp-output-queue>
+            <bgp-output-queue>
+                <number>2</number>
+                <count>0</count>
+            </bgp-output-queue>
+        </bgp-peer>
+        <bgp-peer junos:style="detail">
+            <peer-address>10.106.0.33+64109</peer-address>
+            <peer-as>1803</peer-as>
+            <local-address>10.106.0.22+179</local-address>
+            <local-as>1803</local-as>
+            <peer-type>Internal</peer-type>
+            <route-reflector-client/>
+            <peer-state>Established</peer-state>
+            <peer-flags>Sync RSync</peer-flags>
+            <last-state>EstabSync</last-state>
+            <last-event>RecvKeepAlive</last-event>
+            <last-error>None</last-error>
+            <bgp-option-information xmlns="http://xml.juniper.net/junos/12.3R4/junos-routing">
+                <export-policy>
+                    nhs
+                </export-policy>
+                <bgp-options>Preference LocalAddress AuthKey LogUpDown Cluster AddressFamily Rib-group Refresh</bgp-options>
+                <bgp-options2></bgp-options2>
+                <bgp-options-extended></bgp-options-extended>
+                <authentication-configured/>
+                <address-families>inet-unicast l2vpn-signaling</address-families>
+                <local-address>10.106.0.22</local-address>
+                <holdtime>90</holdtime>
+                <preference>170</preference>
+            </bgp-option-information>
+            <flap-count>0</flap-count>
+            <peer-id>10.106.0.33</peer-id>
+            <local-id>10.106.0.22</local-id>
+            <active-holdtime>90</active-holdtime>
+            <keepalive-interval>30</keepalive-interval>
+            <group-index>0</group-index>
+            <peer-index>5</peer-index>
+            <bgp-bfd>
+                <bfd-configuration-state>disabled</bfd-configuration-state>
+                <bfd-operational-state>down</bfd-operational-state>
+            </bgp-bfd>
+            <peer-restart-nlri-configured>inet-unicast l2vpn</peer-restart-nlri-configured>
+            <nlri-type-peer>inet-unicast l2vpn</nlri-type-peer>
+            <nlri-type-session>inet-unicast l2vpn</nlri-type-session>
+            <peer-refresh-capability>2</peer-refresh-capability>
+            <peer-stale-route-time-configured>300</peer-stale-route-time-configured>
+            <peer-no-restart/>
+            <peer-restart-nlri-negotiated>inet-unicast l2vpn</peer-restart-nlri-negotiated>
+            <peer-end-of-rib-received>inet-unicast l2vpn</peer-end-of-rib-received>
+            <peer-end-of-rib-sent>inet-unicast l2vpn</peer-end-of-rib-sent>
+            <peer-end-of-rib-scheduled></peer-end-of-rib-scheduled>
+            <peer-4byte-as-capability-advertised>1803</peer-4byte-as-capability-advertised>
+            <peer-addpath-not-supported/>
+            <bgp-rib junos:style="detail">
+                <name>inet.0</name>
+                <rib-bit>10000</rib-bit>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <send-state>in sync</send-state>
+                <active-prefix-count>0</active-prefix-count>
+                <received-prefix-count>0</received-prefix-count>
+                <accepted-prefix-count>0</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+                <advertised-prefix-count>7</advertised-prefix-count>
+            </bgp-rib>
+            <bgp-rib junos:style="detail">
+                <name>bgp.l2vpn.0</name>
+                <rib-bit>20000</rib-bit>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <vpn-rib-state>VPN restart is complete</vpn-rib-state>
+                <send-state>in sync</send-state>
+                <active-prefix-count>0</active-prefix-count>
+                <received-prefix-count>0</received-prefix-count>
+                <accepted-prefix-count>0</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+                <advertised-prefix-count>22</advertised-prefix-count>
+            </bgp-rib>
+            <bgp-rib junos:style="detail">
+                <name>VPLS-NGWW-RT1803_1000251.l2vpn.0</name>
+                <bgp-rib-state>BGP restart is complete</bgp-rib-state>
+                <vpn-rib-state>VPN restart is complete</vpn-rib-state>
+                <send-state>not advertising</send-state>
+                <active-prefix-count>0</active-prefix-count>
+                <received-prefix-count>0</received-prefix-count>
+                <accepted-prefix-count>0</accepted-prefix-count>
+                <suppressed-prefix-count>0</suppressed-prefix-count>
+            </bgp-rib>
+            <last-received>14</last-received>
+            <last-sent>18</last-sent>
+            <last-checked>3</last-checked>
+            <input-messages>196886</input-messages>
+            <input-updates>2</input-updates>
+            <input-refreshes>0</input-refreshes>
+            <input-octets>3740897</input-octets>
+            <output-messages>195271</output-messages>
+            <output-updates>1940</output-updates>
+            <output-refreshes>0</output-refreshes>
+            <output-octets>3875127</output-octets>
+            <bgp-output-queue>
+                <number>0</number>
+                <count>0</count>
+            </bgp-output-queue>
+            <bgp-output-queue>
+                <number>1</number>
+                <count>0</count>
+            </bgp-output-queue>
+            <bgp-output-queue>
+                <number>2</number>
+                <count>0</count>
+            </bgp-output-queue>
+        </bgp-peer>
+    </bgp-information>
+    <cli>
+        <banner>{master}</banner>
+    </cli>
+</rpc-reply>
