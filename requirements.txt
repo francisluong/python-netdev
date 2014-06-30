@@ -1,2 +1,3 @@
 PyYAML>=3.10
 pycrypto>=2.6.1
+auth-userpass>=0.0.1
