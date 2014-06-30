@@ -5,6 +5,7 @@ from nose.tools import assert_not_equal
 from nose.tools import assert_raises
 from nose.tools import raises
 
+
 class Test_Userpass(object):
     def test_userpass_001(self):
         """Check userpass vs. 2 user adds, default/first user"""
