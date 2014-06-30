@@ -8,9 +8,9 @@ setup(
     name = "auth-userpass",
     version = "0.0.1",
     author = "Francis Luong (Franco)",
-    author_email = "networkascode@definefunk.com"
-    description = "Simple but not so secure username and password handling",
-    license = "MIT"
-    url = "https://github.com/francisluong/PyJNX"
+    author_email = "networkascode@definefunk.com",
+    description = ("Simple but not so secure username and password handling"),
+    license = "MIT",
+    url = "https://github.com/francisluong/PyJNX",
     install_requires=install_reqs
 )
