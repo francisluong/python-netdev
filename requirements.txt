@@ -1,1 +1,2 @@
 PyYAML>=3.10
+pycrypto>=2.6.1
