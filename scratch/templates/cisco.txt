@@ -1,0 +1,2 @@
+interface {{ intfname }}
+ ip address {{ intfip }} {{ intfmask }}

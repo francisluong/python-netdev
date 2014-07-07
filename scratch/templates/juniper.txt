@@ -1,0 +1,1 @@
+set interfaces {{ intfname }} unit 0 family inet address {{intfip}}/{{intfcidr}}

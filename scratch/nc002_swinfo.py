@@ -28,7 +28,8 @@ def connect(host, username, port=830, password=None, timeout=10, hostkey_verify=
     from getpass import getpass
     password = getpass('{}@{} password: '.format(user, host))
   #return jnpr.junos.Device(host, user=user, password=password).open()
-  return manager.connect(host=host, port=port, username=username, password=password,
+  return manager.connect(host=host, port=port, username=username, 
+    password=password, device_params = {'name':'junos'},
     timeout=timeout, hostkey_verify=hostkey_verify)
 
 if __name__ == '__main__':
