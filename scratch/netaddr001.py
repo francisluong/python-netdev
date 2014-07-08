@@ -22,5 +22,5 @@ print "list_31[:3]: {}".format(list_31[:3])
 
 #And we can work through the list of subnets
 for subnet in list_31:
-    addresses = list(subnet)
-    print "Addresses belonging to {}: ({} {})".format(subnet,str(addresses[0]),str(addresses[1]))
+    addresses = [ str(x) for x in list(subnet) ]
+    print "Addresses belonging to {}: {}".format(subnet,strings)
