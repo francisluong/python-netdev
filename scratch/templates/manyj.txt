@@ -1,0 +1,2 @@
+{% for network,intfname in sub_ifs %}set interfaces {{ intfname }} unit 0 family inet address {{network}}
+{% endfor %}
