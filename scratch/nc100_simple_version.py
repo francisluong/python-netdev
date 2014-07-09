@@ -38,5 +38,4 @@ print "Version: {}".format(version_comment)
 
 #print xml output for get-chassis-inventory
 result = session.get_chassis_inventory()
-outputtree = etree.XML(result.tostring, parser)
-print etree.tostring(outputtree,pretty_print=True)
+print result.tostring
