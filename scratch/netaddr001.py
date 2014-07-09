@@ -21,6 +21,6 @@ list_31 = list(netblock.subnet(31))
 print "list_31[:3]: {}".format(list_31[:3])
 
 #And we can work through the list of subnets
-for subnet in list_31:
+for subnet in list_31[:10]:
     addresses = [ str(x) for x in list(subnet) ]
-    print "Addresses belonging to {}: {}".format(subnet,strings)
+    print "Addresses belonging to {}: {}".format(subnet,addresses)
