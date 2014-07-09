@@ -13,12 +13,16 @@ if len(sys.argv) < 3:
     exit()
 
 #load yaml.userpass
-userpass = Userpass()
-userpass.load(sys.argv[1])
+userpass = Userpass(sys.argv[1])
 
 #connect to router using netconf
-session = manager.connect(host=sys.argv[2], port=830, username=userpass.user(),
-    password=userpass.passwd(), timeout=10, device_params = {'name':'junos'},
+session = manager.connect(
+    host=sys.argv[2], 
+    port=830,
+    username=userpass.user,
+    password=userpass.passwd, 
+    timeout=10, 
+    device_params = {'name':'junos'},
     hostkey_verify=False)
 
 #get-software-information
