@@ -2,7 +2,7 @@
 
 from ncclient import manager
 from pprint import PrettyPrinter
-from auth.userpass import Userpass
+from userpass import Userpass
 from lxml import etree
 #for argv
 import sys, os

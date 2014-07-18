@@ -2,7 +2,7 @@
 
 from ncclient import manager
 from pprint import pprint as pp
-from auth.userpass import Userpass
+from userpass import Userpass
 from lxml import etree
 #for argv
 import sys, os
@@ -17,11 +17,11 @@ userpass = Userpass(sys.argv[1])
 
 #connect to router using netconf
 session = manager.connect(
-    host=sys.argv[2], 
+    host=sys.argv[2],
     port=830,
     username=userpass.user,
-    password=userpass.passwd, 
-    timeout=10, 
+    password=userpass.passwd,
+    timeout=10,
     device_params = {'name':'junos'},
     hostkey_verify=False)
 

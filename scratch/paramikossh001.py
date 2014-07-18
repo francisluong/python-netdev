@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 from paramiko import SSHClient
-from auth.userpass import Userpass
+from userpass import Userpass
 import os, sys
 
 if len(sys.argv) < 3:
