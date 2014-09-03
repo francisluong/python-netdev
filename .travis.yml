@@ -4,5 +4,7 @@ python:
 install:
     - pip install .
     - pip install -r requirements.txt
-script: nosetests  test --verbosity=3 --with-coverage --cover-package auth
+    - ssh-keygen -f ~/.ssh/id_rsa -t rsa -N ''
+    - cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+script: python setup.py nosetests
 

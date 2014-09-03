@@ -3,10 +3,10 @@ from sys import stdout
 import re
 import time
 
-class PSession(object):
+class SSH(object):
     """Wrapper for Paramiko Transport and Channel for Expect-like sessions"""
 
-    def __init__(self, user, passwd):
+    def __init__(self, user, passwd = ""):
         """initialize SSH wrapper but do not connect"""
         self.user = user
         self.passwd = passwd
@@ -71,7 +71,7 @@ class PSession(object):
             done = re.search(expression, self.received_text)
         # if done is not True at this point, we consider it to be a timeout action
         if not done:
-            raise PsessionError("Timeout waiting for expression match: '{}'".format(expression))
+            raise NetDevError("Timeout waiting for expression match: '{}'".format(expression))
         else:
             return self.received_text
 
@@ -81,7 +81,7 @@ class PSession(object):
         if chan.send_ready():
             chan.send(line.strip() + "\n")
         else:
-            raise PsessionError("Attempted to send when send not ready")
+            raise NetDevError("Attempted to send when send not ready")
 
     def send(self, textblock):
         """work through a textblock and send one line at at time"""
@@ -92,8 +92,8 @@ class PSession(object):
             self.wait_for_prompt()
         self.received_text = ""
 
-class PsessionError(Exception):
-    """Error class for Psession"""
+class NetDevError(Exception):
+    """Error class for NetDev"""
 
     def __init__(self, value):
         self.value = value
